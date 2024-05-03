@@ -1,0 +1,21 @@
+{
+	"name": "codewars",
+	"version": "2.0.0",
+	"module": "index.ts",
+	"type": "module",
+	"devDependencies": {
+		"@biomejs/biome": "1.7.2",
+		"@types/bun": "latest",
+		"@types/inquirer": "^9.0.7"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"dependencies": {
+		"inquirer": "^9.2.20"
+	},
+	"scripts": {
+		"generate": "bun src/utilities/generate.ts",
+		"check": "bunx @biomejs/biome check --apply ./src"
+	}
+}

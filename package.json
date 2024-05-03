@@ -15,7 +15,8 @@
 		"inquirer": "^9.2.20"
 	},
 	"scripts": {
+		"check": "bunx @biomejs/biome check --apply ./src",
 		"generate": "bun src/utilities/generate.ts",
-		"check": "bunx @biomejs/biome check --apply ./src"
+		"tdd": "bun test src --watch"
 	}
 }
